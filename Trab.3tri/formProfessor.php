@@ -31,6 +31,9 @@ if(	isset($_SESSION['login']) and $_SESSION['login'] == "admin" ){//se passou pe
 		<label for="email">Email</label>
 		<input type="text" name="email">
 		<br>
+		<label for="disciplina">Disciplina</label>
+		<input type="text" name="disciplina">
+		<br>
 		<label for="foto">Foto</label>
 		<input type="text" name="foto">
 		<br>
