@@ -21,7 +21,7 @@ if(	isset($_SESSION['login']) and $_SESSION['login'] == "admin" ){//se passou pe
 <body>
 	<H2>Inserção de novos professores</H2>
 
-	<form method="post" action="insereProfessor.php">
+	<form method="post" action="insereProfessor.php" enctype="multipart/form-data">
 		<label for="siape">SIAPE</label>
 		<input type="text" name="siape">
 		<br>
@@ -35,7 +35,7 @@ if(	isset($_SESSION['login']) and $_SESSION['login'] == "admin" ){//se passou pe
 		<input type="text" name="disciplina">
 		<br>
 		<label for="foto">Foto</label>
-		<input type="text" name="foto">
+		<input type="file" name="foto">
 		<br>
 		<input type="submit" value="gravar">
 	</form>
