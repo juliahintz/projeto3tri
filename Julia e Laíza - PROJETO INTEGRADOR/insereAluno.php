@@ -1,4 +1,5 @@
 <?php
+
 //mover o arquivo rcebido para o destino esperado
 $origem=$_FILES['foto']['tmp_name'];
 
@@ -15,7 +16,8 @@ move_uploaded_file($origem,$destino);
 ////////////////////////////////////////////
 
 
-	//gravar os demais no csv
+//gravar os demais no csv
+
 $matricula=$_POST['matricula'];
 $nome=$_POST['nome'];
 $turma=$_POST['turma'];
@@ -29,5 +31,6 @@ $foto=$destino;
 	fwrite($arquivo, $linha);
 	fclose($arquivo);
 	echo ("<meta http-equiv='refresh' content='0;url=listaAlunos.php'> ");
+
 
 ?>

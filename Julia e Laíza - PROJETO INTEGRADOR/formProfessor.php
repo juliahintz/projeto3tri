@@ -23,6 +23,9 @@ if (isset($_SESSION['login'])) {
 	<label for="email">E-mail</label>
 	<input type="text" name="email">
 
+	<label for="disciplina">Disciplina</label>
+	<input type="text" name="disciplina>
+
 	<label for="foto">Foto</label>
 	<input type="file" name="foto">
 
