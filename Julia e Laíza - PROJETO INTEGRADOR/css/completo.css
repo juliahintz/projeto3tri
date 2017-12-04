@@ -1,10 +1,7 @@
-
-
-
 body{
 	font-family: Verdana, Arial, sans-serif;
 	font-size: 15px; 
-	background-color: #fbfbfb; 
+	background-color: #D3D3D3; 
 }
 
 img{
@@ -13,7 +10,7 @@ img{
 
 /*topo*/
 #logo{
-	width: 15%;
+	width: 8%;
 	float:left;
 	margin-bottom: 2%;
 }
@@ -27,26 +24,31 @@ img{
 .divider{
 	clear: both;
 }
-
+#admin{
+	float: right;
+	border: 2px solid gray;
+}
 
 /*menu*/
 .menu{
-	width: 100%;
+	width: 100.777%;
 	margin-bottom: 30px;
-	
+	background-color: #0f6da7;
 }
 
 .item.menu{
-	width: 14%;
+	width: 15%;
 	float: left;
 	font-size: 115%;
-	border-radius:6px;
-	border-bottom: 1px solid #ccc;
-	border-right:  1px solid #ccc;
-	border-left:  1px solid #ccc;
-
+	border:6px;
+	border-bottom: 1px solid #2F4F4F;
+	border-right:  1px solid #2F4F4F;
+	border-left:  1px solid #2F4F4F;
+	border-top:  1px solid #2F4F4F;
 	text-align: center;
-	padding: 1.2%;
+	padding: 0.7%;
+	background-color: #2F4F4F;
+	color: #fff;
 }
 
 .item.ativo{
@@ -58,14 +60,21 @@ a{
 }
 
 .item.menu:hover{
-	background-color: #ccc;
+	background-color: #577676;
+	border:6px;
+	border-bottom: 1px solid  #577676;
+	border-right:  1px solid #577676;
+	border-left:  1px solid  #577676;
+	border-top:  1px solid #577676;
+
+	
 }
 
 /*conteudo geral*/
 .coluna10{
 	width: 10%;
 	float: left;
-	color:#fff;
+	color:#2F4F4F;
 }
 
 .coluna80{
@@ -73,6 +82,7 @@ a{
 	float: left;
 	border: 1px solid #aaa;
 	padding: 2%;
+	background: #2F4F4F;
 }
 
 
@@ -97,8 +107,8 @@ a{
 .lista{
 	width: 32%;
 	float: left;
-	border: 1px solid #ddd;
-	margin-right: 1%
+	margin-right: 1%;
+	background: #D3D3D3;
 }
 .esquerda{
 	width: 33%;
@@ -124,9 +134,32 @@ a{
 	border-bottom: 1px solid #696969;
 	border-right:  1px solid #696969;
 	border-left:  1px solid #BEBEBE;
-
 }
-#form{
-	float: right;
 
+
+a:link 
+{ 
+ text-decoration:none;
+} 
+a:link:hover
+{ 
+ text-decoration:none;
+	color: #2F4F4F;
+}
+.login{
+	width: 15%;
+	height: 50px;
+	float: right;
+} 
+.form_login{
+	width: 15%;
+	float: left;
+}
+.escondido{
+	display: none;
+}
+.form_login{
+	
+	float: right;
+	width: 15%;
 }

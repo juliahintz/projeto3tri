@@ -24,12 +24,11 @@
 
 
     foreach ($lista as $professor){
-
-    echo('<li> <a href="detalhaProfessor.php?cod='.$professor['siape'].'">'.$professor ['nome'].'</a> - '.$professor['email'].'</li>'); 
+    echo('<li><a href="detalhaProfessor.php?cod='.$professor['siape'].'">'.$professor ['nome'].'</a></li>'); 
     }
    
   ?> 
-    </ul>
+   </ul>
   </section>
 </article>
 

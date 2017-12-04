@@ -1,5 +1,7 @@
 <?php
+include('cabecalho.php');
 
+if (isset($_SESSION['login'])) {
 //mover o arquivo rcebido para o destino esperado
 $origem=$_FILES['foto']['tmp_name'];
 
@@ -17,7 +19,6 @@ move_uploaded_file($origem,$destino);
 
 
 //gravar os demais no csv
-
 $matricula=$_POST['matricula'];
 $nome=$_POST['nome'];
 $turma=$_POST['turma'];
@@ -32,5 +33,11 @@ $foto=$destino;
 	fclose($arquivo);
 	echo ("<meta http-equiv='refresh' content='0;url=listaAlunos.php'> ");
 
+}else{
+	?>
+	<h2>Acesso negado</h2>
+<?php
+}
 
+include('rodape.php');
 ?>

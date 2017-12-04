@@ -24,7 +24,7 @@ if (isset($_SESSION['login'])) {
 	<input type="text" name="email">
 
 	<label for="disciplina">Disciplina</label>
-	<input type="text" name="disciplina>
+	<input type="text" name="disciplina">
 
 	<label for="foto">Foto</label>
 	<input type="file" name="foto">
@@ -38,5 +38,9 @@ if (isset($_SESSION['login'])) {
 
 
 <?php	
+}else{
+	?>
+	<h2>Acesso negado</h2>
+<?php
 }
 ?>
